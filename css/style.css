@@ -1,0 +1,163 @@
+/*
+Colors used:
+Primary Color (Dark blue): #2D3047;
+Secondary Color (Light grey): #F4F4F6;
+Secondary Color (yellow): #FFD800
+Terciary Color (grey): #78849E
+
+*/
+/* Font-family used:
+Open Sans;
+*/
+
+body {
+  background-color: #ffffff
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
+  color: #4a4a4a;
+}
+
+footer {
+  background-color:#FFD800
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.0em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+}
+.hero-text {
+  font-size: 3em;
+  font-weight: 300;
+}
+
+
+.image {
+  width: 25px; /*reduce icon size*/
+}
+.image:hover,
+.image:focus {
+  width: 25px; /*reduce icon size*/
+  color-background: #FFD800;
+}
+
+/* Links */
+a {
+  color: #2D3047;
+  text-decoration: none; /* No underlining */
+}
+
+a:visited { /* visited link */
+  /* color: #2D3047; */
+  /* We suggest using a different color here */
+  color: #2D3047;
+}
+a:hover,
+a:focus {
+  color: #FFD800;
+  text-decoration: underline;
+}
+a:active { /* selected link */
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  font-weight: 400;
+}
+/* general buttons */
+.button {
+  display: inline-block;
+  background-color: #2D3047;
+  color: #ffffff;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 0px solid #2D3047;
+  transition: 0.2s opacity;
+}
+
+
+.button:visited {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+  background-color: #2D3047;
+  color: #ffffff;
+}
+.button:hover,
+.button:focus {
+  text-decoration: none;
+  background-color: #FFD800;
+  color: #ffffff;
+}
+.button:active {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+  background-color: #FFD800;
+  color: #ffffff;
+}
+
+
+.button.contact {
+  background-color: transparent;
+  color: #2D3047;
+  text-transform: uppercase;
+  border: 2px solid #2D3047;
+}
+
+.button.contact:hover {
+  background-color: #2D3047;
+  color: #FFD800;
+  border: 2px solid #2D3047;
+}
+.button.contact:active {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  background-color: #2D3047;
+  color: #FFD800;
+  border: 2px solid #2D3047;
+}
+
+.button.cv {
+  background-color: transparent;
+  color: #2D3047;
+  text-transform: uppercase;
+  border: 2px solid #2D3047;
+}
+
+.button.cv:hover {
+  background-color: #FFD800;
+  color: #ffffff;
+  border: 2px solid #FFD800;
+}
+.button.cv:active {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  background-color: #FFD800;
+  color: #ffffff;
+  border: 2px solid #FFD800;
+}
