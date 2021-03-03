@@ -10,6 +10,75 @@ Terciary Color (grey): #78849E
 Open Sans;
 */
 
+/* Layout styling */
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #151726;
+  width:100%;
+}
+
+nav > ul > li > a:visited {
+  color: #151726;
+}
+
+nav > ul > li > a:hover, a:focus {
+  color: #FFD800;
+  text-decoration: underline;
+}
+
+nav > ul > li > a:active {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  font-weight: 400;
+}
+
+
+
+
+.logo {
+  max-width: 250px;
+}
+header {
+  background-color: #F4F4F6;
+  position: fixed;
+  display: inline;
+  text-align: center;
+  width: 100%;
+  padding: 10px 0;
+  box-shadow: 1px 1px 4px 0px rgba(49, 50, 50, 0.5);
+}
+main {
+  padding-top: 133px;
+}
+#hero {
+  background-color: #F4F4F6;
+  padding: 20px 0;
+  width: 100%;
+}
+.container {
+  padding: 0 15px;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+#work .row {
+  padding-bottom: 25px; border-bottom: 1px solid #151726;
+}
+#skills.row {
+  padding-bottom: 25px; border-bottom: 1px solid #151726;
+}
+
 body {
   background-color: #ffffff
 }
@@ -22,11 +91,15 @@ body {
   /* Sets the font weight to 300 */
   line-height: 1.6;
   /* Sets the line-height to 1.6 * the font-size */
-  color: #4a4a4a;
+  color: #151726;
 }
 
+
 footer {
-  background-color:#FFD800
+  background-color:#F4F4F6;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
 }
 
 h1, h2, h3, h4 {
@@ -57,7 +130,7 @@ img {
   width: 100%;
 }
 .hero-text {
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 300;
 }
 
@@ -73,14 +146,15 @@ img {
 
 /* Links */
 a {
-  color: #2D3047;
+  color: #151726;
+  font-weight: 400;
   text-decoration: none; /* No underlining */
 }
 
 a:visited { /* visited link */
   /* color: #2D3047; */
   /* We suggest using a different color here */
-  color: #2D3047;
+  color: #151726;
 }
 a:hover,
 a:focus {
@@ -94,12 +168,12 @@ a:active { /* selected link */
 /* general buttons */
 .button {
   display: inline-block;
-  background-color: #2D3047;
+  background-color: #151726;
   color: #ffffff;
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 0px solid #2D3047;
+  border-bottom: 0px solid #151726;
   transition: 0.2s opacity;
 }
 
@@ -107,7 +181,7 @@ a:active { /* selected link */
 .button:visited {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
-  background-color: #2D3047;
+  background-color: #151726;
   color: #ffffff;
 }
 .button:hover,
@@ -126,28 +200,28 @@ a:active { /* selected link */
 
 .button.contact {
   background-color: transparent;
-  color: #2D3047;
+  color: #151726;
   text-transform: uppercase;
-  border: 2px solid #2D3047;
+  border: 2px solid #151726;
 }
 
 .button.contact:hover {
-  background-color: #2D3047;
+  background-color: #151726;
   color: #FFD800;
-  border: 2px solid #2D3047;
+  border: 2px solid #151726;
 }
 .button.contact:active {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
-  background-color: #2D3047;
+  background-color: #151726;
   color: #FFD800;
-  border: 2px solid #2D3047;
+  border: 2px solid #151726;
 }
 
 .button.cv {
   background-color: transparent;
-  color: #2D3047;
+  color: #151726;
   text-transform: uppercase;
-  border: 2px solid #2D3047;
+  border: 2px solid #151726;
 }
 
 .button.cv:hover {
