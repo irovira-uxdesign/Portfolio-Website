@@ -17,23 +17,30 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
   <header>
-    <div class='container'><svg xmlns="http://www.w3.org/2000/svg" width="150" height="63" viewBox="0 0 150 63" class="logo">
-        <text id="irovira." transform="translate(0 50)" font-size="48" font-family="Roboto-Bold, Roboto" font-weight="700">
-          <tspan x="0" y="0">irovira.</tspan>
-        </text>
-      </svg>
+    <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="150" height="63" viewBox="0 0 150 63" class="logo">
+          <text id="irovira." transform="translate(0 50)" font-size="48" font-family="Roboto-Bold, Roboto" font-weight="700">
+            <tspan x="0" y="0">irovira.</tspan>
+          </text>
+        </svg>
 
-      <nav>
-        <ul class="navigation">
-          <li><a href="index.html">Work</a></li>
-          <li><a href="About Ignacio Rovira.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+        <nav>
+          <ul class="navigation">
+            <li><a href="index.html">Work</a></li>
+            <li><a href="About Ignacio Rovira.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                <i class="fa fa-bars"></i>
+              </a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
   <main>
@@ -148,7 +155,8 @@
       <p>Copyright ©2021 Ignacio Rovira</p>
       </div>
     </footer>
-<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
 </body>
 

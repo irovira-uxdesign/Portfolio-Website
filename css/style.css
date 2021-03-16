@@ -10,24 +10,21 @@ Terciary Color (grey): #78849E
 Open Sans;
 */
 /* Layout styling */
-
-
 .logo {
-  max-width: 250px;
+  max-width: 120px;
 }
 
 header {
   background-color: #F4F4F6;
+  text-align: left;
   position: fixed;
-  display: inline;
-  text-align: center;
   width: 100%;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   box-shadow: 1px 1px 4px 0px rgba(49, 50, 50, 0.5);
 }
 
 main {
-  padding-top: 133px;
+  padding-top: 56px;
 }
 
 #hero {
@@ -160,7 +157,6 @@ a:active {
   border-radius: 3px;
   border-bottom: 0px solid #151726;
   transition: 0.2s opacity;
-
 }
 
 .button:visited {
@@ -228,22 +224,39 @@ a:active {
   color: #ffffff;
   border: 2px solid #FFD800;
 }
+
+/* Move menu icon to the right*/
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  font-size: 20px;
+  padding-right: 0;
+}
+/*Menu hidden*/
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+/* Delete bullet points*/
 nav>ul {
   list-style-type: none;
-  padding: 0;
   width: 100%;
+  padding: 0;
+  margin: 0;
 }
-
-nav>ul>li {
-  display: inline-block;
-}
-
 nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #151726;
-  width: 100%;
 }
 
 nav>ul>li>a:visited {
@@ -260,11 +273,23 @@ nav>ul>li>a:active {
   /* Reduces the opacity of the button to 80% */
   font-weight: 400;
 }
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #151726;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
 
 /* ==============================
 Animation
 ================================= */
-
 .animation {
   width: 100%;
   max-width: 100%;
@@ -272,24 +297,47 @@ Animation
 }
 
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
 }
+
 @keyframes cloud-front {
-  from {transform: translate(-7311.904px, -4353.672px);}
-  to {transform: translate(-6500px, -4353.672px);}
+  from {
+    transform: translate(-7311.904px, -4353.672px);
+  }
+
+  to {
+    transform: translate(-6500px, -4353.672px);
+  }
 }
+
 @keyframes cloud-back {
-  from {transform: translate(-6000.904px, -4246px);}
-  to {transform: translate(-7200.904px, -4246px);}
+  from {
+    transform: translate(-6000.904px, -4246px);
+  }
+
+  to {
+    transform: translate(-7200.904px, -4246px);
+  }
 }
+
 .sun {
   animation: 4s color-change infinite alternate linear;
 }
+
 .cloud-front {
   animation: 30s cloud-front infinite alternate linear;
 }
+
 .cloud-back {
   animation: 34s cloud-back infinite alternate linear;
 }
@@ -298,6 +346,10 @@ Animation
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+  .logo {
+    max-width: 150px;
+  }
+
   header {
     text-align: unset;
     padding: 20px 0 13px;
@@ -324,20 +376,37 @@ Medium devices (640px and larger)
   .col-md-6 {
     width: 50%;
   }
+
   [class*="col-"] {
     float: left;
     padding-bottom: 10px;
   }
+
   .row::after {
     content: "";
     clear: both;
     display: table;
   }
+  nav > ul {
+    margin: 1em 0;
+  }
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
 
   #about-page h3 {
     margin-top: 0;
   }
-  footer{
+
+  footer {
     text-align: center;
   }
 }
@@ -349,14 +418,16 @@ Large devices (1024px or larger)
   .col-lg-7 {
     width: 60%;
   }
+
   .col-lg-5 {
     width: 40%;
   }
+
   .container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* ==============================
