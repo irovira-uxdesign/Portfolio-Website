@@ -5,22 +5,22 @@ Secondary Color (Light grey): #F4F4F6;
 Secondary Color (yellow): #FFD800
 Terciary Color (grey): #78849E
 
-*/
+/*
 /* Font-family used:
 Open Sans;
-*/
-/* Layout styling */
+
+Layout styling */
 .logo {
-  max-width: 120px;
+  max-width: 150px;
 }
 
 header {
-  background-color: #F4F4F6;
+  background-color: #fff;
   text-align: left;
   position: fixed;
   width: 100%;
   padding: 10px 0 4px;
-  box-shadow: 1px 1px 4px 0px rgba(49, 50, 50, 0.5);
+  box-shadow: 0 rgba(49, 50, 50, 0.5);
 }
 
 main {
@@ -28,7 +28,7 @@ main {
 }
 
 #hero {
-  background-color: #F4F4F6;
+  background-color: #fff;
   padding: 20px 0;
   width: 100%;
 }
@@ -39,6 +39,7 @@ main {
 
 .row {
   margin: 25px 0;
+
   /* 25px top and bottom, 0 left and right */
 }
 
@@ -47,29 +48,40 @@ main {
   border-bottom: 1px solid #151726;
 }
 
+#hero .row {
+  padding-bottom: 150px;
+  border-bottom: 1px solid #151726;
+}
+
 body {
-  background-color: #ffffff
+  background-color: #fff;
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 12px;
+
   /* Sets the font size to 16px */
   font-weight: 300;
+
   /* Sets the font weight to 300 */
   line-height: 1.6;
+
   /* Sets the line-height to 1.6 * the font-size */
   color: #151726;
 }
 
 footer {
-  background-color: #F4F4F6;
+  background-color: #f4f4f6;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.4;
 }
 
@@ -79,7 +91,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.0em;
+  font-size: 2em;
   font-weight: 700;
 }
 
@@ -103,20 +115,21 @@ img {
 }
 
 .hero-text {
-  font-size: 2em;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .image {
   width: 25px;
-  /*reduce icon size*/
+
+  /* reduce icon size */
 }
 
 .image:hover,
 .image:focus {
   width: 25px;
-  /*reduce icon size*/
-  color-background: #FFD800;
+
+  /* reduce icon size */
+  background-color: #ffd800;
 }
 
 /* Links */
@@ -124,25 +137,29 @@ a {
   color: #151726;
   font-weight: 400;
   text-decoration: none;
+
   /* No underlining */
 }
 
 a:visited {
   /* visited link */
+
   /* color: #2D3047; */
+
   /* We suggest using a different color here */
   color: #151726;
 }
 
 a:hover,
 a:focus {
-  color: #FFD800;
+  color: #ffd800;
   text-decoration: underline;
 }
 
 a:active {
   /* selected link */
   opacity: 0.8;
+
   /* Reduces the opacity of the button to 80% */
   font-weight: 400;
 }
@@ -151,36 +168,38 @@ a:active {
 .button {
   display: inline-block;
   background-color: #151726;
-  color: #ffffff;
+  color: #fff;
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 0px solid #151726;
+  border-bottom: px solid #151726;
   transition: 0.2s opacity;
 }
 
 .button:visited {
   opacity: 0.8;
+
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
   background-color: #151726;
-  color: #ffffff;
+  color: #fff;
 }
 
 .button:hover,
 .button:focus {
   text-decoration: none;
-  background-color: #FFD800;
-  color: #ffffff;
+  background-color: #ffd800;
+  color: #fff;
   cursor: pointer;
 }
 
 .button:active {
   opacity: 0.8;
+
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
-  background-color: #FFD800;
-  color: #ffffff;
+  background-color: #ffd800;
+  color: #fff;
 }
 
 .button.contact {
@@ -192,15 +211,16 @@ a:active {
 
 .button.contact:hover {
   background-color: #151726;
-  color: #FFD800;
+  color: #ffd800;
   border: 2px solid #151726;
 }
 
 .button.contact:active {
   opacity: 0.8;
+
   /* Reduces the opacity of the button to 80% */
   background-color: #151726;
-  color: #FFD800;
+  color: #ffd800;
   border: 2px solid #151726;
 }
 
@@ -212,24 +232,27 @@ a:active {
 }
 
 .button.cv:hover {
-  background-color: #FFD800;
-  color: #ffffff;
-  border: 2px solid #FFD800;
+  background-color: #ffd800;
+  color: #fff;
+  border: 2px solid #ffd800;
 }
 
 .button.cv:active {
   opacity: 0.8;
+
   /* Reduces the opacity of the button to 80% */
-  background-color: #FFD800;
-  color: #ffffff;
-  border: 2px solid #FFD800;
+  background-color: #ffd800;
+  color: #fff;
+  border: 2px solid #ffd800;
 }
 
-/* Move menu icon to the right*/
-.navtoggle, .navtoggle.responsive {
+/* Move menu icon to the right */
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
 }
 
@@ -240,52 +263,57 @@ a:active {
   font-size: 20px;
   padding-right: 0;
 }
-/*Menu hidden*/
+
+/* Menu hidden */
 .navtoggle li:not(:last-child) {
   display: none;
 }
 
-/* Delete bullet points*/
-nav>ul {
+/* Delete bullet points */
+nav > ul {
   list-style-type: none;
   width: 100%;
   padding: 0;
   margin: 0;
 }
-nav>ul>li>a {
+
+nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #151726;
 }
 
-nav>ul>li>a:visited {
+nav > ul > li > a:visited {
   color: #151726;
 }
 
-nav>ul>li>a:hover, a:focus {
-  color: #FFD800;
+nav > ul > li > a:hover,
+a:focus {
+  color: #ffd800;
   text-decoration: underline;
 }
 
-nav>ul>li>a:active {
+nav > ul > li > a:active {
   opacity: 0.8;
+
   /* Reduces the opacity of the button to 80% */
   font-weight: 400;
 }
+
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
   border-top: 1px solid #151726;
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
-
 
 /* ==============================
 Animation
@@ -361,16 +389,16 @@ Medium devices (640px and larger)
     margin-top: 4px;
   }
 
-  #hero {
-    text-align: center;
-  }
-
   #hero span {
     display: block;
   }
 
   main {
-    padding-top: 99px;
+    padding-top: 200px;
+  }
+
+  body {
+    font-size: 16px;
   }
 
   .col-md-6 {
@@ -387,10 +415,12 @@ Medium devices (640px and larger)
     clear: both;
     display: table;
   }
+
   nav > ul {
     margin: 1em 0;
   }
-  nav>ul>li {
+
+  nav > ul > li {
     display: inline-block;
   }
 
@@ -433,4 +463,3 @@ Large devices (1024px or larger)
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {}
