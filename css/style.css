@@ -59,7 +59,7 @@ body {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 12px;
+  font-size: 16px;
 
   /* Sets the font size to 16px */
   font-weight: 300;
@@ -115,7 +115,7 @@ img {
 }
 
 .hero-text {
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .image {
@@ -279,7 +279,6 @@ nav > ul {
 
 nav > ul > li > a {
   padding: 0 15px;
-  text-transform: uppercase;
   font-weight: 700;
   color: #151726;
 }
@@ -457,6 +456,10 @@ Large devices (1024px or larger)
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  main {
+    padding-top: 150px;
   }
 }
 
